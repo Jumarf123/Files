@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Segoe UI Variable Text", "Segoe UI", "Bahnschrift", sans-serif;
+  --font-display: "Segoe UI Variable Display", "Bahnschrift", sans-serif;
+  --font-mono: "Cascadia Code", "Consolas", monospace;
+}
+
+:root {
+  --accent: #5865f2;
+  --accent-2: #3ba55d;
+  color-scheme: dark;
+  font-family: var(--font-sans);
+  background: #111214;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  min-width: 1180px;
+  background: #111214;
+  overflow: hidden;
+  overscroll-behavior: none;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+::-webkit-scrollbar {
+  width: 11px;
+  height: 11px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+::-webkit-scrollbar-thumb {
+  border: 2px solid transparent;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.12);
+  background-clip: padding-box;
+}
+
+@media (max-width: 1280px) {
+  body {
+    min-width: 1180px;
+  }
+}
