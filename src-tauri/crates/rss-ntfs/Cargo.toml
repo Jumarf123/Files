@@ -1,0 +1,16 @@
+[package]
+name = "rss-ntfs"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+
+[dependencies]
+anyhow = { workspace = true }
+base64 = { workspace = true }
+ntfs-reader = { workspace = true }
+rss-core = { path = "../rss-core" }
+rss-windows = { path = "../rss-windows" }
+time = { workspace = true }
+tracing = { workspace = true }
+windows = { workspace = true }

@@ -1,0 +1,14 @@
+[package]
+name = "rss-report"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+
+[dependencies]
+anyhow = { workspace = true }
+csv = { workspace = true }
+html-escape = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+rss-core = { path = "../rss-core" }

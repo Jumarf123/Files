@@ -1,0 +1,15 @@
+[package]
+name = "rss-catalog"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+
+[dependencies]
+anyhow = { workspace = true }
+directories = { workspace = true }
+ntfs-reader = { workspace = true }
+rss-core = { path = "../rss-core" }
+rusqlite = { workspace = true }
+sha2 = { workspace = true }
+time = { workspace = true }

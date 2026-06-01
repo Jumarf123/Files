@@ -1,0 +1,15 @@
+[package]
+name = "rss-fs"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+
+[dependencies]
+anyhow = { workspace = true }
+rss-carver = { path = "../rss-carver" }
+rss-core = { path = "../rss-core" }
+rss-fat = { path = "../rss-fat" }
+rss-ntfs = { path = "../rss-ntfs" }
+rss-security = { path = "../rss-security" }
+rss-windows = { path = "../rss-windows" }
